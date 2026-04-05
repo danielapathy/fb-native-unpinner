@@ -3,7 +3,7 @@
 This is a script to help you get around SSL pinning in the Facebook (Katana) app on Android. It specifically targets the native `libcoldstart.so` library so you can actually read the traffic in your proxy without the app crashing on you or blocking requests.
 
 ### What you'll need
-Before starting, you need a rooted environment. I used a **Google APIs Android 16 (API 36.0)** Pixel 9 Pro emulator installed via [Android Studio](https://developer.android.com/studio/install) Device Manager. To get root access, I launched the emulator with a writable system and used **[rootAVD](https://gitlab.com/newbit/rootAVD)**. Note that while Magisk might not show root, you’ll still have `su` access via `adb shell su`.
+Before starting, you need a rooted environment. I used a **Google APIs Android 16 (API 36.0)** Pixel 9 Pro emulator installed via [Android Studio](https://developer.android.com/studio/install) Device Manager. To get root access, I launched the emulator with a writable system and used **[rootAVD](https://gitlab.com/newbit/rootAVD)** with the FAKEBOOTIMG option. Note that while Magisk might not show root, you’ll still have `su` access via `adb shell su`.
 
 ### 1. Get your certificate ready
 You need to grab your `mitmproxy` certificate and format it for the Android system store.
